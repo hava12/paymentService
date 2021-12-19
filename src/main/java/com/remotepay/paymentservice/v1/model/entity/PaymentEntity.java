@@ -1,5 +1,7 @@
 package com.remotepay.paymentservice.v1.model.entity;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -11,6 +13,7 @@ import javax.persistence.Id;
 public class PaymentEntity {
 
     @Id
+	@GeneratedValue(strategy= GenerationType.AUTO)
     private Long payment_id;
 
     @Column
