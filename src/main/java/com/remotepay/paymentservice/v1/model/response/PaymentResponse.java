@@ -13,5 +13,6 @@ public class PaymentResponse {
 	private String pay_amount;
 	private String tax_amount;
 	private String service_amount;
-	private String phone_number;
+	// MapStruct 테스트를 위해 phone_number를 phone_num으로 바꿔보자.
+	private String phone_num;
 }
